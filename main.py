@@ -21,6 +21,9 @@ from typing import List, Dict, Any
 from collections import deque
 import logging
 
+# Disable SSL warnings for proxy testing
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
