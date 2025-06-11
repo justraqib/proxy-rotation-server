@@ -55,9 +55,9 @@ class ProxyManager:
         }
         
         # Configuration
-        self.max_workers = 10  # Low thread count
+        self.max_workers = 50  # Low thread count
         self.update_interval = 360  # 10 minutes between updates
-        self.validation_timeout = 10
+        self.validation_timeout = 4
         
         # Lock for thread safety
         self.lock = threading.Lock()
