@@ -20,6 +20,8 @@ import os
 from typing import List, Dict, Any
 from collections import deque
 import logging
+import urllib3
+
 
 # Disable SSL warnings for proxy testing
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
