@@ -55,7 +55,7 @@ class ProxyManager:
         }
         
         # Configuration
-        self.max_workers = 1000  # Low thread count
+        self.max_workers = 4  # Low thread count
         self.update_interval = 360  # 10 minutes between updates
         self.validation_timeout = 4
         
