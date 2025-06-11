@@ -403,12 +403,12 @@ async def startup_event():
     start_background_updater()
 
 if __name__ == "__main__":
-    port_str = os.environ.get("PORT", "8000")
+    port_str = os.environ.get("PORT", "10000")
     try:
         port = int(port_str)
     except ValueError:
         logger.error(f"Invalid PORT value from environment: {port_str}")
-        port = 8000  # fallback
+        port = 10000  # fallback
 
     uvicorn.run(
         "main:app",
